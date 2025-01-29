@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हुनरHunt - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="header">
+        <div class="logo" onclick="navigateTo('index.html')">हुनरHunt</div>
+        <div class="search-icon">🔍</div>
+    </nav>
+
+    <div class="container">
+        <div class="form-card">
+            <h2 class="form-title">Login</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="email" placeholder="abc_example@gmail.com" required>
+                    <input type="password" placeholder="••••••••••" required>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - हुनरHunt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="header">
+        <div class="logo" onclick="navigateTo('index.html')">हुनरHunt</div>
+        <button class="sign-out" onclick="handleLogout()">Sign Out</button>
+    </nav>
+
+    <div class="dashboard-container">
+        <h1>Welcome!, Company Name</h1>
+        <div class="profile-section">
+            <img src="company_logo.png" alt="Company Logo">
+            <a href="#" class="edit-profile" onclick="navigateTo('profile-picture.html')">✏️ Edit Profile</a>
+        </div>
+        <div class="dashboard-buttons">
+            <button onclick="viewActiveJobs()">Active Jobs: N</button>
+            <button onclick="viewApplications()">Active Applications</button>
+            <button onclick="addJob()">+ Add a New Job</button>
+            <button onclick="viewEmployees()">Employees Details</button>
+            <button onclick="viewJobHistory()">Job History</button>
+            <button onclick="viewNotifications()">Notifications <span class="notification-dot">🔴</span></button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

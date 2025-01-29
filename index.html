@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हुनरHunt - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="header">
+        <div class="logo" onclick="navigateTo('index.html')">हुनरHunt</div>
+        <div class="nav-items">
+            <button onclick="navigateTo('login.html')">Login</button>
+            <button class="about-btn">About Us</button>
+            <button class="contact-btn">Contact Us</button>
+        </div>
+    </nav>
+
+    <main class="home-container">
+        <h1 class="main-title">हुनरHunt</h1>
+        <h2 class="subtitle">Bridging Local Skills with Business Opportunities.</h2>
+        
+        <div class="action-buttons">
+            <button onclick="navigateTo('register-worker.html')" class="primary-btn">Sign Up as Worker</button>
+            <button onclick="navigateTo('register-business.html')" class="primary-btn">Sign Up as Hirer</button>
+        </div>
+
+        <div class="about-section">
+            <p>Welcome to हुनरHunt, where tradition meets opportunity! At हुनरHunt, our mission is to empower Indian women by connecting their skills with local businesses. Here they can list their various crafting skills, whether it's embroidery, quilting, knitting, or any traditional craft. They can work from the comfort of their homes, and gain economic independence.</p>
+        </div>
+
+        <section class="skills-section">
+            <h3>Converting Creative Skills into Business</h3>
+            <div class="skills-image">
+                <img src="/api/placeholder/600/300" alt="Crafting skills" />
+            </div>
+            <div class="testimonials">
+                <div class="testimonial">- Sahrojini</div>
+                <div class="testimonial">- YashRaj</div>
+                <div class="testimonial">- Divya</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

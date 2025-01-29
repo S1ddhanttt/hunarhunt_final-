@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हुनरHunt - Business Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="header">
+        <div class="logo" onclick="navigateTo('index.html')">हुनरHunt</div>
+        <div class="search-icon">🔍</div>
+    </nav>
+
+    <button class="return-btn" onclick="navigateTo('index.html')">
+        <span >↩</span> Return
+    </button>
+    
+    <div class="container-business">
+        <h1>Register as a Business</h1>
+        <form id="businessForm">
+            <div class="form-grid">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Organisation Name" required>
+                </div>
+
+                <form id="workerRegistrationForm" onsubmit="handleWorkerRegistration(event)"></form>
+                
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option value="" disabled selected>Type of Job</option>
+                        <option value="tech">Technology</option>
+                        <option value="retail">Retail</option>
+                        <option value="service">Service</option>
+                        <option value="manufacturing">Manufacturing</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Contact" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="file" id="uploadLogo" accept="image/*" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn" onclick="navigateTo('login.html')">Register Now!</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

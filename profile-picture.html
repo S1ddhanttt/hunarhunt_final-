@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile Picture</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="profile-container">
+        <h2>Edit Profile Picture</h2>
+        <img src="company_logo.png" alt="Profile Picture" class="profile-img" id="profilePreview">
+        <input type="file" accept="image/*" class="file-input" id="fileInput" onchange="previewImage(event)">
+        <br>
+        <button class="btn" onclick="saveProfilePicture()">Save</button>
+        <button class="btn" onclick="goBack()">Cancel</button>
+    </div>
+    <script src = "main.js"></script>
+
+</body>
+</html>
